@@ -1,6 +1,6 @@
 import easyocr
 
-reader = easyocr.Reader(['en']) #Load the English OCR model
+reader = easyocr.Reader(['en'])  # Load the English OCR model
 
 image_path = 'test_plate.jpg'
 
