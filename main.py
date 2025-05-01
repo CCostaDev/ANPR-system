@@ -3,6 +3,7 @@ from anpr.plate_detector import PlateDetector
 from anpr.database import Database
 from anpr.gate_controller import GateController
 
+
 def main():
     camera = Camera()
     detector = PlateDetector()
@@ -23,6 +24,7 @@ def main():
             print("Plate not recognised. Gate remains closed.")
     else:
         print("No plate detected.")
+
 
 if __name__ == "__main__":
     main()
