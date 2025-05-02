@@ -7,5 +7,5 @@ class Database:
             self.data = json.load(f)
 
     def is_plate_authorised(self, plate):
-        print(f"Checking if plate is authorised...")
+        print("Checking if plate is authorised...")
         return plate in self.data['plates']

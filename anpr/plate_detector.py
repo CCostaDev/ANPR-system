@@ -1,6 +1,7 @@
 import cv2
 import easyocr
 
+
 class PlateDetector:
     def __init__(self):
         self.reader = easyocr.Reader(['en'])
