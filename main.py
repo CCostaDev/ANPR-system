@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore", message=".*pin_memory.*")
 
 
 def main():
-    camera = Camera()
+    # camera = Camera()
     detector = PlateDetector()
     db = Database()
     gate = GateController()
