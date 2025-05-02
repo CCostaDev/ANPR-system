@@ -1,5 +1,5 @@
 import warnings
-from anpr.camera import Camera
+# from anpr.camera import Camera
 from anpr.plate_detector import PlateDetector
 from anpr.database import Database
 from anpr.gate_controller import GateController
