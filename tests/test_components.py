@@ -39,7 +39,7 @@ def test_gate_controller_prints_gate_open_message(capfd):
 
 
 # T06 – Main flow (mocked) – simulate full logic manually
-def test_full_flow_simulation():
+def test_full_flow_simulation(capfd):
     camera = Camera()
     detector = PlateDetector()
     db = Database()
@@ -56,4 +56,4 @@ def test_full_flow_simulation():
 
     out, _ = capfd.readouterr()
     assert result is True
-    assert "Opening gate" in out # Confirms printed output
+    assert "Opening gate" in out  # Confirms printed output
