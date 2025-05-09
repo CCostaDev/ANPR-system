@@ -49,9 +49,11 @@ def test_full_flow_simulation():
     plate = detector.detect_plate(image)
 
     if db.is_plate_authorised(plate):
-        # If needed, simulate gate.open() or just assert logic
+        gate.open()
         result = True
     else:
         result = False
 
+    out, _ = capfd.readouterr()
     assert result is True
+    assert "Opening gate" in out # Confirms printed output
